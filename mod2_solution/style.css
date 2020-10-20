@@ -1,0 +1,109 @@
+/* Main Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Palatino Linotype","Book Antiqua",serif;
+    font-size: 100%;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+/* Row */
+#section-1, #section-2, #section-3 {
+    position: relative;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    border: 1px solid #000;
+}
+
+#section-1 {
+    color: #fff;
+    background-color: #828282;
+}
+
+#section-2 {
+    color: #fff;
+    background: #787276;
+}
+
+#section-3 {
+    color: #fff;
+    background: #777b7e;
+}
+
+h2.heading-1, h2.heading-2, h2.heading-3 {
+    position: absolute;
+    right: 0;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.heading-1 {
+    background: #5f4b8bff;
+}
+
+.heading-2 {
+    background: #00203fff;
+}
+
+#section-3 .heading-3 {
+    background: #606060ff;
+}
+
+p.p1, p.p2, p.p3 {
+    font-size: 1.3rem;
+    padding: 50px 15px 20px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 991px) {
+    #section-1, #section-2 {
+        width: 50%;
+        float: left;
+    }
+
+    #section-3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #section-1, #section-2, #section-3 {
+        float: none;
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #section-1 {
+        color: #fff;
+        background-color: #828282;
+    }
+    
+    #section-2 {
+        color: #fff;
+        background: #787276;
+    }
+    
+    #section-3 {
+        color: #fff;
+        background: #777b7e;
+    }
+
+    p {
+        padding-top: 40px;
+    }
+}
